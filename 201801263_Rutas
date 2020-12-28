@@ -1,0 +1,11 @@
+1. Registro:
+	a. Tipo petición: POST
+	b. Ruta: 192.178.99.100:3000/registro
+	
+2. Login:
+	a. Tipo petición: POST
+	b. Ruta: 192.178.99.100:3000/login
+	
+3. Usuarios:
+	a. Tipo petición: GET
+	b. Ruta: 192.178.99.100:3000/getUsuarios
