@@ -7,6 +7,13 @@ credentials={
 
 }
 
+try {
+    oracledb.initOracleClient({libDir: '/opt/oracle/instantclient_21_1'});
+} catch (err) {
+    console.error('No se puede conectar al cliente!');
+}
+
+
 async function Open(sql, binds, autoCommit) {
     let cnn = await oracledb.getConnection(credentials);
     let result = await cnn.execute(sql, binds, { autoCommit });
